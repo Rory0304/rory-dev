@@ -5,7 +5,7 @@ module.exports = {
       name: `Rory (Eunsoo Sa)`,
     },
     description: `Rory Dev Blog`,
-    siteUrl: `https://rory-dev.vercel.app`,
+    siteUrl: `https://rory-dev-rory0304.vercel.app`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -128,8 +128,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://rory-dev.vercel.app',
-        sitemap: 'https://rory-dev.vercel.app/sitemap/sitemap-index.xml',
+        host: 'https://rory-dev-rory0304.vercel.app/',
+        sitemap: 'https://rory-dev-rory0304.vercel.app/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

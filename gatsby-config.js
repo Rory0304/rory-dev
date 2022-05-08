@@ -5,7 +5,7 @@ module.exports = {
       name: `Rory (Eunsoo Sa)`,
     },
     description: `Rory Dev Blog`,
-    siteUrl: `https://rory-dev-io.vercel.app`,
+    siteUrl: `https://rory-dev.vercel.app`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -124,5 +124,14 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://rory-dev.vercel.app',
+        sitemap: 'https://rory-dev.vercel.app/sitemap/sitemap-index.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 }

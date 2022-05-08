@@ -1,15 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Rory Dev Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Rory (Eunsoo Sa)`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `Rory Dev Blog`,
+    siteUrl: `https://rory-dev-io.vercel.app`,
   },
   plugins: [
     `gatsby-plugin-image`,

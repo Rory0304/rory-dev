@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "rory-dev-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Rory dev blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Eunsoo Sa<jk0612110@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Rory0304/roryDev.io"
   },
   "dependencies": {
     "gatsby": "^4.8.0",

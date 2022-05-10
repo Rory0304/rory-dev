@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Rory Dev Blog`,
+    title: `Rory Devlog`,
     author: {
       name: `Rory (Eunsoo Sa)`,
     },
-    description: `Rory Dev Blog`,
+    description: `Rory Devlog`,
     siteUrl: `https://www.rory-dev.com/`,
   },
   plugins: [
@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/content`,
         name: `blog`,
       },
     },
@@ -95,6 +95,7 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      thumbnail
                     }
                   }
                 }

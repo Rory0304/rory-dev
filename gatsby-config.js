@@ -95,7 +95,11 @@ module.exports = {
                     frontmatter {
                       title
                       date
-                      thumbnail
+                      thumbnail{
+                        childImageSharp {
+                          gatsbyImageData
+                        }
+                      }
                     }
                   }
                 }

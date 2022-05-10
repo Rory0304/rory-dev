@@ -1,0 +1,5 @@
+.content-layout{
+    max-width: var(--maxWidth-3xl);
+    margin: 0 auto;
+    padding: var(--spacing-24) 0;
+}

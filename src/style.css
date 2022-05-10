@@ -11,7 +11,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --maxWidth-wrapper: 73rem;
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -27,11 +27,7 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
-    Times, serif;
+  --fontFamily-sans: "Noto Sans Korean", "Fira Sans", sans-serif, 'Noto Sans Korean', 'sans-serif',
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -243,7 +239,7 @@ a:focus {
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
+  padding: var(--spacing-24) var(--spacing-5);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -254,6 +250,36 @@ a:focus {
   margin-bottom: var(--spacing-12);
 }
 
+.global-header h1{
+  position: relative;
+  font-size: 5rem;
+}
+
+.global-header h1 a{
+  color: rgb(167, 78, 255);
+  -webkit-text-stroke: 0.1rem rgb(167, 78, 255);
+}
+
+.global-header h1::before{
+  color: transparent;
+  content: "Rory Devlog";
+  position: absolute;
+  left: 0.4rem;
+  top: -0.4rem;
+  -webkit-text-stroke: 0.1rem rgba(0, 0, 0, 0.841);
+  opacity: 0.7;
+}
+
+.global-header h1::after{
+  position: absolute;
+  content: "Rory Devlog";
+  left: -0.4rem;
+  top: 0.4rem;
+  color: rgb(113, 255, 78);
+  -webkit-text-stroke: 0.1rem rgba(0, 0, 0, 0.841);
+  opacity: 0.9;
+}
+
 .main-heading {
   font-size: var(--fontSize-7);
   margin: 0;
@@ -262,6 +288,20 @@ a:focus {
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail-img-area{
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.post-text-area{
+  width: 100%;
 }
 
 .post-list-item p {
@@ -277,6 +317,10 @@ a:focus {
 
 .post-list-item header {
   margin-bottom: var(--spacing-4);
+}
+
+.post-list-item header h2:hover{
+  /* border-bottom: 2px solid black; */
 }
 
 .header-link-home {
@@ -306,6 +350,8 @@ a:focus {
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
+
+
 
 .blog-post header p {
   font-size: var(--fontSize-2);

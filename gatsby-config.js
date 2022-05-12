@@ -129,12 +129,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.rory-dev.com/',
-        sitemap: 'https://www.rory-dev.com/sitemap/sitemap-index.xml',
+        sitemap: 'https://www.rory-dev.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
